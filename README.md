@@ -1,0 +1,1 @@
+# gredisoft-wp-theme
