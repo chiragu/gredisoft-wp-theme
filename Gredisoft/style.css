@@ -10,6 +10,33 @@ Text Domain:  Gredisoft
 
 /* Write here your own personal stylesheet */
 
+/* General element style overrides */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+    color: #25A0D5;
+    text-decoration: inherit;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+h1 a:focus,
+h2 a:focus,
+h3 a:focus,
+h4 a:focus,
+h5 a:focus,
+h6 a:hover,
+h1 a:active,
+h2 a:active,
+h3 a:active,
+h4 a:active,
+h5 a:active,
+h6 a:active{
+	color: #25d5b2;
+}
+
 /* Header and Nav */
 .custom-logo {
     height: 100px;
@@ -37,6 +64,8 @@ Text Domain:  Gredisoft
     background-size: cover;
 
 }
+
+
 
 /* --------------- Media Queries for Smaller Screens ------------------------ */
 @media only screen and (max-width: 768px) {
