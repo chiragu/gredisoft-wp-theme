@@ -9,3 +9,45 @@ Text Domain:  Gredisoft
 */
 
 /* Write here your own personal stylesheet */
+
+/* Header and Nav */
+.custom-logo {
+    height: 100px;
+    width: 100px;       
+}
+
+.site-identity, #main-nav {
+   padding-top: 55px;
+}
+
+.site-header {
+    padding-bottom: 10px;
+}
+
+.head-search-cart-wrap {
+    display: none;
+}
+
+/* Hero section */
+
+.header-one #custom-header {
+    background-image: url( './assets/images/hero.gif');
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+
+}
+
+/* --------------- Media Queries for Smaller Screens ------------------------ */
+@media only screen and (max-width: 768px) {
+
+    .custom-logo {
+        height: 150px;
+        width: 150px;       
+    }
+    
+    .site-identity, .right-head {
+        padding-top: 20px;
+    }
+
+}

@@ -28,3 +28,18 @@ if ( ! function_exists( 'suffice_child_enqueue_child_styles' ) ) {
 add_action( 'wp_enqueue_scripts', 'Gredisoft_enqueue_child_styles' );
 
 /*Write here your own functions */
+
+// Load overiding scripts 
+function load_scripts() {
+
+    // Script for overiding dom contents with js
+    wp_register_script('overrides', get_stylesheet_directory_uri() . '/assets/js/overrides.js', array(), 1, 1, 1);
+    wp_enqueue_script('overrides');
+}
+add_action('wp_enqueue_scripts', 'load_scripts');
+
+// Add font awesome
+function enqueue_load_fa() {
+	wp_enqueue_style( 'load-fa', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.css' );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
